@@ -1,0 +1,27 @@
+{
+	"name": "ng-karma-chunk",
+	"version": "0.0.0",
+	"description": "Angular/Karma spec chunk generator",
+	"main": "src/cmd.js",
+	"preferGlobal": true,
+	"bin": {
+		"ng-karma-chunk": "src/cmd.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"karmaChunk": {
+		"rootDir": "sample",
+		"chunkDirs": [
+			"sample/extra"
+		],
+		"chunksDirs": [
+			"sample/modules"
+		]
+	},
+	"author": "Nicolas Gaignoux",
+	"license": "ISC",
+	"dependencies": {
+		"commander": "^2.12.1"
+	}
+}
